@@ -49,6 +49,24 @@ h1, h2, h3, h4, h5, h6 {
 /** Global CSS **/
 /* We recommend writing minimal component-specific CSS here */
 
+/* Example: styles.css */
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: hsl(210, 46%, 95%); /* A subtle off-white/grayish background */
+  font-family: 'Manrope', sans-serif;   /* Or any font from your style guide */
+}
+
+/* Center content horizontally and vertically if desired */
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Full viewport height */
+  padding: 1rem;
+}
+
+
 
 /** Attribution CSS **/
 .attribution { 

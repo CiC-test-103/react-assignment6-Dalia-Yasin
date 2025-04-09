@@ -1,5 +1,10 @@
 /** Component Imports */
-import Example from './components/Example'
+
+import React from 'react';
+import ArticlePreview from './components/ArticlePreview/ArticlePreview';
+import SocialShare from './components/SocialShare/SocialShare';
+
+import './styles.css'; // this is for global styles including resets and variables
 
 /**
  * This is the entry point for your react-app
@@ -14,22 +19,12 @@ import Example from './components/Example'
 
 const App = () => {
   return (
-    <div>
-      {<Example /> /** You can remove this when you wish, it's provided as an example of modular styling */}
-      
-      Shift the overall look and feel by adding these wonderful 
-      touches to furniture in your home
-
-      Ever been in a room and felt like something was missing? Perhaps 
-      it felt slightly bare and uninviting. I’ve got some simple tips 
-      to help you make any room feel complete.
-
-      Michelle Appleton
-      28 Jun 2020
-
-      Share
+    <div className="App">
+      <main>
+        <ArticlePreview />
+      </main>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
